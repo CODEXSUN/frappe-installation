@@ -53,14 +53,23 @@ sudo apt install python3.12-venv -y
 ``` 
 
 
+### STEP 5 Software Properties
+```sh
+sudo apt-get install software-properties-common -y
+```    
 ### STEP 5 Install MariaDB
 ```sh
-    sudo apt-get install software-properties-common
-    sudo apt install mariadb-server
-    sudo systemctl status mariadb
-    sudo mysql_secure_installation
+sudo apt install mariadb-server -y
+```
 
+```
+sudo systemctl status mariadb
+```
+```
+sudo mysql_secure_installation
+```
 
+### STEP 7
       In order to log into MariaDB to secure it, we'll need the current
       password for the root user. If you've just installed MariaDB, and
       haven't set the root password yet, you should just press enter here.
@@ -139,21 +148,26 @@ Now press (Ctrl-X) to exit
     sudo service mysql restart
 
 ### STEP 8 install Redis
-
-    sudo apt-get install redis-server
+```sh
+sudo apt-get install redis-server -y
+```
 
 ### STEP 9 install Node.js 18.X package
-
-    sudo apt install curl
-    curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
-    source ~/.profile
-    nvm install 18
+```sh
+sudo apt install curl
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+source ~/.profile
+nvm install 18
+```
 
 ### STEP 10  install Yarn
+```sh
+sudo apt-get install npm
+```
 
-    sudo apt-get install npm
-
-    sudo npm install -g yarn
+```sh
+sudo npm install -g yarn
+```
 
 ### STEP 11 install wkhtmltopdf
 
