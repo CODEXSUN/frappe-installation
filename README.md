@@ -202,13 +202,13 @@ bench start
 >### Note
 >Warning: MariaDB version ['10.11', '7'] is more than 10.8 which is not yet tested with Frappe Framework.
 ```sh
-bench new-site dcode.com
+bench new-site aaranerp.com
 ```
 ```sh
 bench --site dcode.com add-to-hosts
 ```
 
-Open url http://dcode.com:8000 to login
+Open url http:// aaranerp.com:8000 to login
 
 
 ### STEP 15 install ERPNext latest version in bench & site
@@ -220,7 +220,7 @@ bench get-app erpnext --branch version-15
 bench get-app https://github.com/frappe/erpnext --branch version-15
 ```
 ```sh
-bench --site dcode.com install-app erpnext
+bench --site  aaranerp.com install-app erpnext
 ```
 ```sh
 bench start
