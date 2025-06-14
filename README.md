@@ -205,7 +205,7 @@ bench start
 bench new-site aaranerp.com
 ```
 ```sh
-bench --site dcode.com add-to-hosts
+bench --site aaranerp.com add-to-hosts
 ```
 
 Open url http:// aaranerp.com:8000 to login
@@ -220,7 +220,7 @@ bench get-app erpnext --branch version-15
 bench get-app https://github.com/frappe/erpnext --branch version-15
 ```
 ```sh
-bench --site  aaranerp.com install-app erpnext
+bench --site aaranerp.com install-app erpnext
 ```
 ```sh
 bench start
