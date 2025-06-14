@@ -146,7 +146,7 @@ default-character-set = utf8mb4
 ```
 Now press (Ctrl-X) to exit
 ```sh
-    sudo service mysql restart
+sudo service mysql restart
 ```
 
 ### STEP 8 install Redis
