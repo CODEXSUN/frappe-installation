@@ -146,7 +146,7 @@ default-character-set = utf8mb4
 ```
 Now press (Ctrl-X) to exit
 ```sh
-    sudo service mysql restart
+sudo service mysql restart
 ```
 
 ### STEP 8 install Redis
@@ -164,11 +164,11 @@ nvm install 18
 
 ### STEP 10  install Yarn
 ```sh
-sudo apt-get install npm
+sudo apt-get install npm -y
 ```
 
 ```sh
-sudo npm install -g yarn
+sudo npm install -g yarn -y
 ```
 
 ### STEP 11 install wkhtmltopdf
@@ -178,7 +178,7 @@ sudo apt-get install xvfb libfontconfig wkhtmltopdf -y
 
 ### STEP 12 install frappe-bench
 ```sh
-    sudo -H pip3 install frappe-bench --break-system-packages
+sudo -H pip3 install frappe-bench --break-system-packages
 ```
 
 ```sh
@@ -187,7 +187,7 @@ bench --version
 
 ### STEP 13 initilise the frappe bench & install frappe latest version
 ```sh
-    bench init frappe-bench --frappe-branch version-15
+bench init frappe-bench --frappe-branch version-15
 ```
 ```sh
 cd frappe-bench/
@@ -202,7 +202,7 @@ bench start
 >### Note
 >Warning: MariaDB version ['10.11', '7'] is more than 10.8 which is not yet tested with Frappe Framework.
 ```sh
-    bench new-site dcode.com
+bench new-site dcode.com
 ```
 ```sh
 bench --site dcode.com add-to-hosts
@@ -223,7 +223,7 @@ bench get-app https://github.com/frappe/erpnext --branch version-15
 bench --site dcode.com install-app erpnext
 ```
 ```sh
-    bench start
+bench start
 ```
 
 
