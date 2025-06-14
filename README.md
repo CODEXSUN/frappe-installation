@@ -146,7 +146,7 @@ default-character-set = utf8mb4
 ```
 Now press (Ctrl-X) to exit
 ```sh
-sudo service mysql restart
+    sudo service mysql restart
 ```
 
 ### STEP 8 install Redis
@@ -172,46 +172,59 @@ sudo npm install -g yarn
 ```
 
 ### STEP 11 install wkhtmltopdf
-
-    sudo apt-get install xvfb libfontconfig wkhtmltopdf
-
+```sh
+sudo apt-get install xvfb libfontconfig wkhtmltopdf -y
+```
 
 ### STEP 12 install frappe-bench
-
+```sh
     sudo -H pip3 install frappe-bench --break-system-packages
+```
 
-    bench --version
+```sh
+bench --version
+```
 
 ### STEP 13 initilise the frappe bench & install frappe latest version
-
+```sh
     bench init frappe-bench --frappe-branch version-15
+```
+```sh
+cd frappe-bench/
+```
 
-    cd frappe-bench/
-    bench start
+```sh
+bench start
+```
 
 ### STEP 14 create a site in frappe bench
 
 >### Note
 >Warning: MariaDB version ['10.11', '7'] is more than 10.8 which is not yet tested with Frappe Framework.
-
+```sh
     bench new-site dcode.com
-
-    bench --site dcode.com add-to-hosts
+```
+```sh
+bench --site dcode.com add-to-hosts
+```
 
 Open url http://dcode.com:8000 to login
 
 
 ### STEP 15 install ERPNext latest version in bench & site
-
-
-    bench get-app erpnext --branch version-15
-    ###OR
-    bench get-app https://github.com/frappe/erpnext --branch version-15
-
-    bench --site dcode.com install-app erpnext
-
+```sh
+bench get-app erpnext --branch version-15
+```
+        ###OR
+```sh
+bench get-app https://github.com/frappe/erpnext --branch version-15
+```
+```sh
+bench --site dcode.com install-app erpnext
+```
+```sh
     bench start
-
+```
 
 
 
