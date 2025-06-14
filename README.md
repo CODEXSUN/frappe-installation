@@ -34,22 +34,22 @@ sudo apt-get upgrade -y
 
 ### STEP 1 Install git
 ```sh
-sudo apt-get install git
+sudo apt-get install git -y
 ```    
 
 ### STEP 2 install python-dev
 ```sh
-sudo apt-get install python3-dev
+sudo apt-get install python3-dev -y
 ```
 
 ### STEP 3 Install setuptools and pip (Python's Package Manager).
 ```sh
-sudo apt-get install python3-setuptools python3-pip
+sudo apt-get install python3-setuptools python3-pip -y 
 ```    
 
 ### STEP 4 Install virtualenv
 ```sh
-sudo apt install python3.12-venv
+sudo apt install python3.12-venv -y
 ``` 
 
 
