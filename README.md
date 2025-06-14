@@ -25,35 +25,36 @@ A complete Guide to Install Frappe/ERPNext version 15  in Ubuntu 24.04 LTS
 
 ### STEP 1 update linux
 
-```bash
-    sudo apt-get update -y 
+```sh
+sudo apt-get update -y 
 ```
-```bash
-    sudo apt-get upgrade -y
+```sh
+sudo apt-get upgrade -y
 ```
 
 ### STEP 1 Install git
-```bash
-    sudo apt-get install git
+```sh
+sudo apt-get install git
 ```    
 
 ### STEP 2 install python-dev
-```bash
-    sudo apt-get install python3-dev
+```sh
+sudo apt-get install python3-dev
 ```
 
 ### STEP 3 Install setuptools and pip (Python's Package Manager).
-```bash
-    sudo apt-get install python3-setuptools python3-pip
+```sh
+sudo apt-get install python3-setuptools python3-pip
 ```    
 
 ### STEP 4 Install virtualenv
-
-    sudo apt install python3.12-venv
+```sh
+sudo apt install python3.12-venv
+``` 
 
 
 ### STEP 5 Install MariaDB
-
+```sh
     sudo apt-get install software-properties-common
     sudo apt install mariadb-server
     sudo systemctl status mariadb
@@ -94,15 +95,15 @@ A complete Guide to Install Frappe/ERPNext version 15  in Ubuntu 24.04 LTS
 
        Reload privilege tables now? [Y/n] Y
        ... Success!
-
+```
 
 
 
 
 ### STEP 6  MySQL database development files
-
-    sudo apt-get install libmysqlclient-dev
-
+```sh
+sudo apt-get install libmysqlclient-dev
+```
 ### STEP 7 Edit the mariadb configuration ( unicode character encoding )
 
     sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
@@ -194,3 +195,8 @@ Open url http://dcode.com:8000 to login
     bench --site dcode.com install-app erpnext
 
     bench start
+
+
+
+
+
