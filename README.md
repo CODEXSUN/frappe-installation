@@ -70,6 +70,7 @@ sudo mysql_secure_installation
 ```
 
 ### STEP 7
+```
       In order to log into MariaDB to secure it, we'll need the current
       password for the root user. If you've just installed MariaDB, and
       haven't set the root password yet, you should just press enter here.
@@ -111,15 +112,15 @@ sudo mysql_secure_installation
 
 ### STEP 6  MySQL database development files
 ```sh
-sudo apt-get install libmysqlclient-dev
+sudo apt-get install libmysqlclient-dev -y
 ```
+
 ### STEP 7 Edit the mariadb configuration ( unicode character encoding )
-
-    sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
-
-add this to the 50-server.cnf file
-
-
+```sh
+sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+```
+## add this to the 50-server.cnf file
+```sh
     [server]
     user = mysql
     pid-file = /run/mysqld/mysqld.pid
@@ -142,10 +143,11 @@ add this to the 50-server.cnf file
 
     [mysql]
     default-character-set = utf8mb4
-
+```
 Now press (Ctrl-X) to exit
-
+```sh
     sudo service mysql restart
+```
 
 ### STEP 8 install Redis
 ```sh
